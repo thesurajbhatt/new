@@ -69,6 +69,18 @@ const CreateStudent = () => {
     const handleName = (e)=>{
         setname(e.target.value)
     }
+const collectData=()=>{
+
+try{
+
+let insertData=axios.post('http://localhost:5000/student/signup',{
+	name,
+});
+}
+catch(error){
+
+}
+}
 
   return (
     <div className='App'>
